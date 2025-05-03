@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #bcabef, #61ed66);
+    color: #ffffff;
+}
+
+
+.container{
+    border: 0.5px solid wheat;
+    border-radius: 1rem;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.container h2{
+    font-size: 1.4rem;
+    margin-block: 8px;
+}
+
+
+.inputbox{
+    position: relative;
+}
+
+.inputbox span{
+    position:absolute;
+
+    right: 30px;
+    color: black;
+    top: 17px;
+    cursor: pointer;
+}
+
+.passbox{
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    margin-block: 8px;
+
+}
+
+.row{
+    display: flex;
+    margin-block: 8px;
+}
+
+.row p, label {
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"]{
+    width: 20px;
+}
+
+.genbtn{
+    border: none;
+    outline: none;
+    background-color: rgba(154, 68, 234, 0.694);
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 1rem;
+    color: white;
+    margin-block: 8px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.genbtn:hover{
+    background-color: #0c820e;
+}

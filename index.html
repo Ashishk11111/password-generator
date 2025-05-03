@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h2>GENERATE YOUR PASSWORD</h2>
+        <div class="inputbox">
+            <input type="text" class="passbox" id="passbox" disabled>
+            <span class="material-symbols-outlined" id="copyicon">
+                content_copy
+            </span>
+        </div>
+        <input type="range" min="4" max="16" id="lenght" value="8">
+        <div class="row">
+            <p >password length</p>
+            <span id="lenghtvalue"></span>
+            
+        </div>
+
+        
+
+        <div class="row">
+            <label for="lowercase">Include lowercase letters(a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase" checked/>
+        </div>
+        <div class="row">
+            <label for="uppercase">Include uppercase letters(A-Z)</label>
+            <input type="checkbox" name="uppercase" id="uppercase" checked/>
+        </div>
+        <div class="row">
+            <label for="numbers">Include numbers(1-9)</label>
+            <input type="checkbox" name="numbers" id="numbers" checked/>
+        </div>
+        <div class="row">
+            <label for="symbols">Include symbols</label>
+            <input type="checkbox" name="symbols" id="symbols" checked/>
+        </div>
+
+        <button class="genbtn" id="genbtn">generate password</button>
+        
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
